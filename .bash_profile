@@ -26,14 +26,6 @@ export PATH="$PATH:$HOME/tools/apache-maven-3.3.9/bin"
 export HISTSIZE=5000
 export HISTFILESIZE=5000
 
-parse_git_branch() {
-
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-
-}
-
-#export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
-
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='[\u@\h \W\[\033[32m\]$(__git_ps1)\[\033[00m\]]\$ '
 
