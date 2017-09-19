@@ -13,7 +13,7 @@ if [ -x /usr/bin/dircolors ]; then
 	alias egrep='egrep --color=auto'
 fi
 
-export PATH="$PATH:$HOME/node/node-v6.3.1-darwin-x64/bin"
+export PATH="$PATH:$HOME/node/node-v6.11.1-darwin-x64/bin"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
