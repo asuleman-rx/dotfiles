@@ -1,5 +1,5 @@
 {
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 1000,
     "workbench.editor.showTabs": false,
     // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
@@ -11,8 +11,18 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/.idea": true,
-        "**/coverage": true
+        "**/coverage": true,
+        "**/.happypack": true,
+        "**/dist": true,
+        "**/target": true
     },
     "javascript.validate.enable": false,
-    "editor.lineNumbers": "relative"
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.iconTheme": "vs-seti",
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "editor.selectionHighlight": true,
+    "editor.minimap.enabled": false
 }
